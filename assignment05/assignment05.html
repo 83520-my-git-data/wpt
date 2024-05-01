@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>demo 10</title>
+</head>
+
+<body>
+
+    <div style="margin-top: 0px;" >
+        <img src="img/bike.png" style="width: 100px; height: 100px; position:absolute" id="mybike" >
+    </div>
+
+    <div style="width: 600px; height: 100px; background-color: black; margin-top: 100px; position: absolute; border-top-right-radius: 20px;"></div>
+
+   
+                <br/>
+                <br/><br/><br/><br/><br/><br/>
+
+    </table>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <label for="">x axis</label><input type="number" id="x" readonly>
+    <br><br><br>
+    <label for="">y axis</label><input type="number" id="y" readonly>
+    <br><br>
+
+    <div style="margin-top: 100px; margin-left: 20px" >
+        <input type="button" value="Start/Speed up" onclick="start()">
+        <input type="button" value="Stop" onclick="stop()">
+    </div>
+
+
+
+
+
+</body>
+
+<script>
+
+    var counter = 0;
+
+    var vtop = 0;
+
+    var queueNo ;
+
+    var queueArray = new Array;
+
+    var refToMyDiv = document.getElementById("mybike");
+
+
+    function start()
+    {
+        queueNo = window.setInterval(keepCounting, 90);
+        queueArray.push(queueNo);
+
+    }
+
+    function stop()
+    {
+        var queueNo = queueArray.pop();
+        window.clearInterval(queueNo);
+        
+    }
+
+    function keepCounting()
+    {
+        counter = counter +1;
+        //refToMyDiv.innerText = counter;
+
+        if(counter < 630)
+        {
+            refToMyDiv.style.marginLeft = counter + "px";
+            x.value = counter;
+        }
+        else
+        {  
+
+             finish();
+        }
+    }
+
+    
+     function finish()
+     {
+        if(counter>630)
+        {
+            
+            refToMyDiv.style.rotate = "60deg";
+
+                if(vtop < 400)
+                {
+                    vtop = vtop + 1.5;
+
+                    refToMyDiv.style.marginTop = vtop + "px";
+
+                    y.value = vtop;
+                
+                }else{
+                    document.querySelector("#mybike ").src = "img/boom.jpeg";
+                }
+            }else{}
+        
+
+     } 
+
+
+
+
+</script>
+
+
+
+
+</html>
+
