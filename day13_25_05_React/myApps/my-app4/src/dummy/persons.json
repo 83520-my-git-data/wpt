@@ -1,0 +1,34 @@
+[
+    {
+        "name" : "person1",
+        "age" : 20,
+        "city" : "pune",
+        "email" : "person1@gmail.com"
+    },
+    {
+        "name" : "person2",
+        "age" : 23,
+        "city" : "bhilai",
+        "email" : "person2@gmail.com"
+    },
+    {
+        "name" : "person3",
+        "age" : 24,
+        "city" : "Aligarh",
+        "email" : "person3@gmail.com"
+    },
+    {
+        "name" : "person4",
+        "age" : 25,
+        "city" : "Lucknow",
+        "email" : "person4@gmail.com"
+    },
+    {
+        "name" : "person5",
+        "age" : 26,
+        "city" : "Raipur",
+        "email" : "person5@gmail.com"
+    }
+
+
+]

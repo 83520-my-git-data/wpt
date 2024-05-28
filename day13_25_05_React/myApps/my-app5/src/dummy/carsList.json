@@ -1,0 +1,32 @@
+[
+{
+    "name" : "GLS",
+    "model" : "X23",
+    "price" : 150
+},
+
+{
+    "name" : "HondaCity",
+    "model" : "X24",
+    "price" : 15
+},
+
+{
+    "name" : "Porsche",
+    "model" : "WS",
+    "price" : 135
+},
+
+{
+    "name" : "Avendator",
+    "model" : "X26",
+    "price" : 160
+},
+
+{
+    "name" : "Verna",
+    "model" : "XS",
+    "price" : 25
+}
+
+]
